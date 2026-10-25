@@ -1,0 +1,165 @@
+
+%-------------------------
+% ATS Optimized Embedded Resume (one page)
+% Author: Tejas Chaudhari
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+%---------- Packages ----------
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+
+\pdfgentounicode=1
+
+%---------- Page Setup ----------
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.35in}
+
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{itemsep=1.5pt, parsep=0pt, topsep=2pt, partopsep=0pt}
+
+%---------- Section Formatting ----------
+\titleformat{\section}{
+  \scshape\large\raggedright
+}{}{0em}{}[\vspace{-3pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{5pt}
+
+%---------- Custom Commands ----------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \small #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, label={}, itemsep=6pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%==================== DOCUMENT ====================
+\begin{document}
+
+%---------- Header ----------
+\begin{center}
+    {\Huge \scshape Tejas Chaudhari} \\ \vspace{3pt}
+    \small Pune, India \quad | \quad +91 75583 58463 \quad | \quad
+    \href{mailto:tejaschaudhari457@gmail.com}{tejaschaudhari457@gmail.com} \quad | \quad
+    \href{https://www.linkedin.com/in/tejaschaudhari457}{linkedin.com/in/tejaschaudhari457}
+\end{center}
+
+%---------- Professional Summary ----------
+\section{Professional Summary}
+\small{
+Embedded Firmware Engineer with 3+ years of experience in Embedded C, RTOS-based systems, microcontroller firmware, and Embedded Linux. Currently in a client-facing role at L\&T Technology Services, analyzing and maintaining Linux kernel code for camera and display subsystems, resolving customer-reported issues through Jira, and delivering fixes via Bitbucket pull requests.
+}
+
+%---------- Core Skills ----------
+\section{Core Skills}
+\small{
+\textbf{Programming:} Embedded C, C, C++ \quad \textbf{MCUs:} ESP32, STM32, AVR, ARM Cortex-M \\
+\textbf{Operating Systems:} Embedded Linux (Linux Kernel, camera and display subsystems), FreeRTOS, Bare Metal \\
+\textbf{Protocols:} UART, I2C, SPI, CAN, RS485 (Modbus RTU) \quad \textbf{Systems:} Firmware Design, System Architecture, Sensor/Actuator Interfacing, BMS \\
+\textbf{IoT \& Cloud:} MQTT, HTTP, AWS, ThingSpeak \\
+\textbf{Tools \& Workflow:} Git, Bitbucket, Jira, Pull Request Workflow, VS Code, Oscilloscope, Logic Analyzer, Debuggers \\
+\textbf{Other:} Code Analysis, Root-Cause Analysis, Issue Reproduction, Code Review, Requirement Analysis, Effort Estimation, Documentation
+}
+
+%---------- Professional Experience ----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{L\&T Technology Services (LTTS)}{May 2026 -- Present}
+{Embedded Firmware Engineer (Client-Facing)}{Mumbai, India}
+\resumeItemListStart
+\resumeItem{Analyze and maintain the client's Linux kernel-based product code, covering core functionality and the camera and display subsystems, within the client's secure network environment.}
+\resumeItem{Create, reproduce, and resolve customer-reported issues tracked in Jira, from triage through root-cause analysis to verified fix.}
+\resumeItem{Raise and merge pull requests on Bitbucket, following the client's branching, review, and release practices.}
+\resumeItem{Coordinate directly with client engineering teams on issue status, technical clarifications, and fix validation.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Robokidz Eduventures Pvt. Ltd.}{Oct 2025 -- May 2026}
+{Junior Technical Officer – Embedded \& IoT}{Pune, India}
+\resumeItemListStart
+\resumeItem{Analyzed requirements and developed embedded firmware for robotics and IoT systems, with effort estimation and on-time delivery.}
+\resumeItem{Reviewed firmware designs and source code to improve maintainability, reliability, and performance.}
+\resumeItem{Troubleshot complex hardware–software issues using systematic debugging and root-cause analysis.}
+\resumeItem{Provided structured technical clarifications and design inputs in coordination with the R\&D team.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Lithium India (Startup)}{Aug 2023 -- Sep 2025}
+{Embedded Software Engineer}{Pune, India}
+\resumeItemListStart
+\resumeItem{Handled system design and firmware development for ESP32/STM32-based Battery Management Systems (BMS).}
+\resumeItem{Architected embedded solutions integrating CAN, RS485 (Modbus RTU), UART, SPI, and I2C for real-time data acquisition.}
+\resumeItem{Designed and optimized RTOS-based tasks ensuring deterministic behavior and system stability.}
+\resumeItem{Implemented cloud connectivity using MQTT, AWS, and ThingSpeak for live monitoring and analytics.}
+\resumeItem{Collaborated with hardware, QA, and R\&D teams to deliver scalable, production-ready embedded systems.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%---------- Projects ----------
+\section{Key Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{RTOS-Based Traffic Accident Detection System}{FreeRTOS, Embedded C}
+\resumeItemListStart
+\resumeItem{Designed system architecture and developed FreeRTOS-based firmware for real-time accident detection.}
+\resumeItem{Implemented task prioritization, ISR handling, and sensor data fusion using MPU6050.}
+\resumeItem{Integrated GSM, GPS, and cloud services for real-time alerts and remote monitoring.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{Non-Touch Automatic Door System with Embedded Vision}{Embedded System, OpenCV}
+\resumeItemListStart
+\resumeItem{Developed a contactless door control system integrating vision-based detection and temperature sensing.}
+\resumeItem{Integrated pre-trained computer vision models for real-time human detection and decision logic.}
+\resumeItem{Focused on system integration, calibration, and reliable hardware–software coordination.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%---------- Education ----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Centre for Development of Advanced Computing (C-DAC)}{Aug 2024 -- Feb 2025}
+{PG Diploma in Embedded Systems and Design (PG-DESD)}{Bangalore, India}
+
+\resumeSubheading
+{K. K. Wagh Institute of Engineering Education and Research}{Aug 2019 -- Jul 2023}
+{Bachelor of Engineering – Electronics and Telecommunication}{Nashik, India}
+
+\resumeSubHeadingListEnd
+
+\end{document}
